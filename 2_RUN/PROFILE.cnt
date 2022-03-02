@@ -1,0 +1,5 @@
+[CREATE_FILE]      // необходимо указать имя существующего файла
+NAME_FILE=.\first_kontakt.txt 
+
+[CREATE_MAP]
+READ_BYTES  = 4096;    // 1 страница - 4096 байт 

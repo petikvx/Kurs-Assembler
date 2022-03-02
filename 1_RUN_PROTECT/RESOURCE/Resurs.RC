@@ -1,0 +1,38 @@
+#define   H_MENU      100
+#define    ICON_1      101
+#define    TEXT_DATA  102
+#define     STRING_1 103
+#define    STRING_2    104
+//..........................................................................
+TEXT_DATA            USERDATA    ".\\first_kontakt.txt"
+//..........................................................................
+ICON_1   ICON  ".\\RESOURCE\\Antelope.ICO"
+//..........................................................................
+STRINGTABLE  
+{
+     STRING_1  ,    "Строка ресурс"
+     STRING_2  ,    "Вторая строка"     
+}    
+//..........................................................................
+H_MENU   MENU
+{
+//-----
+     POPUP   "FILE"
+     {
+             MENUITEM   "OemChar  перевести в  OEM", 1
+             MENUITEM   "AnsiChar   получить  Ansi", 2
+     }
+     //'========
+     POPUP   "SERVIS"
+     {
+                           POPUP   "TEXT"
+     		 {
+                             MENUITEM   "ЗАГРУЗИТЬ ТЕКСТ"   ,  3
+      		 }
+             MENUITEM  "Exit" , 4
+     }    
+
+//-----     
+}
+
+

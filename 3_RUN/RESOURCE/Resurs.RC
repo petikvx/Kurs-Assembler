@@ -1,0 +1,29 @@
+#define    H_MENU      100
+#define    ICON_1      101
+#define    ICON_2      102
+#define    BITMAP_1   103
+//..........................................................................
+//..........................................................................
+ICON_1   ICON  ".\\RESOURCE\\Antelope.ICO"
+ICON_2   ICON  ".\\RESOURCE\\Plus.ICO"
+//..........................................................................
+BITMAP_1   BITMAP    "C:\\masm32\\BIN\\WORKCATALOG\\STEP_ONE\\RESOURCE\\Cosmos.bmp"
+//..........................................................................
+H_MENU    MENU
+{
+        POPUP   "BIT&MAP"
+        {
+              MENUITEM "&TRANS"  ,   10
+              MENUITEM "SC&REEN"  ,   11
+        }      
+        
+}
+//..........................................................................
+H_MENU   ACCELERATORS
+{
+	//  S = 0x53   ,    D  =   0x44
+	0x53 , 10 , VIRTKEY , CONTROL    // SHIFT , ALT
+	0x44 , 11 , VIRTKEY , ALT      
+}
+
+  

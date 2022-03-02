@@ -1,0 +1,21 @@
+#define    H_MENU      100
+#define    ICON_1      101
+#define    ICON_2      102
+//..........................................................................
+ICON_1   ICON  ".\\RESOURCE\\Antelope.ICO"
+ICON_2   ICON  ".\\RESOURCE\\Plus.ICO"
+//..........................................................................
+H_MENU    MENU
+{
+        POPUP   "DIALOG"
+        {
+              MENUITEM "COLOR"  ,   10
+              MENUITEM "DIRECTORY"  ,   11
+              MENUITEM "FONT",    12
+        }      
+        
+}
+//..........................................................................
+
+
+  
